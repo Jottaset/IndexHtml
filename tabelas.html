@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+</head>
+<body>
+    <h1>HTML Table</h1>
+    <table border="0">
+        <tr>
+            <td>Nome:</td>
+            <td>Sobrenome:</td>
+            <td>Idade</td>
+            <td>Link do Google</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nomeUsuario" id="nomeUsuario"placeholder="Nome"></td>
+            <td><input type="text" name="sobrenomeUsuario" id="sobrenomeUsuario"placeholder="Sobrenome"></td>
+            <td><input type="text" name="idadeUsuario" id="idadeUsuario"placeholder="Idade"></td>
+            <td> <a href="http://google.com">Acessar o Google</a> </td>
+        </tr>
+        <tr>
+            <td>
+                <button type= "button" onclick="mostraMsg()" >Executar Js</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function mostraMsg(){
+            alert("testando...");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cliente Formulário</title>
+</head>
+<body>
+        <h1>Tabela HTML</h1>
+        <table border="1">
+            <tr>
+                <label>
+                    <td>Nome:</td>
+                    <td>Sobrenome:</td>
+                    <td>Idade</td>
+                </label>
+            </tr>
+            <tr>
+                <td><input type="text" name="nomeUsuario" id="nomeUsuario"placeholder="Nome"></td>
+                <td><input type="text" name="sobrenomeUsuario" id="sobrenomeUsuario"placeholder="Sobrenome"></td>
+                <td><input type="text" name="idadeUsuario" id="idadeUsuario"placeholder="Idade"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Comentário
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <textarea name="" cols="80" rows="10" id="content"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type= "button" onclick="dizOla()" >Clicando</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "3">
+                    <input type="text" name="conteudo"id="conteudo">
+                </td>
+            </tr>
+        </table>
+        <script src="src/main.js"></script>
+</body>
+</html>
