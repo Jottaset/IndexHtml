@@ -1,0 +1,16 @@
+.fundoVerde{
+    background-color: green;
+    color: purple;
+
+}
+
+.fundoAzul{
+    background-color: blue;
+    color: yellow;
+}
+
+
+#divDoFundoVermelho{
+    background-color: red;
+    color: white;
+}
