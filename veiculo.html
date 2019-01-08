@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,20 @@
     <title>Veículo</title>
 
     <link rel="stylesheet" href="bootstrap-3.4.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-confirm-v3.3.3/css/jquery-confirm.css">
 
 </head>
 <body>
     <div class="container form-horizontal" style="margin-top:10px;">
 
         <div class="panel panel-danger">
+            <div class= "panel panel-heading">
+                <h1>Veículo   <span class="glyphicon  glyphicon-ok-sign"></span></h1>
+              
+
+            </div>
 
             <div class="panel-body">
-
-                <h1>Veículo</h1>
                 <div class="form-group">
                     <div class="col-sm-4">
                         <label for="marca">Marca:</label>
@@ -27,19 +31,71 @@
                             <input type="text"  nome="modelo" id="modelo" class="text form-control">
                     </div>
                     <div class="col-sm-4">
-                            <label for="cor">Cor:</label>
-                            <input type="text"  nome="cor" id="cor" class="text form-control">
+                            <label for="Cor">Cor:</label>
+                            <input type="text"  nome="Cor" id="Cor" class="text form-control">
                     </div>
                     <div class="col-sm-4">
-                            <label for="ano">Ano:</label>
-                            <input type="text"  nome="ano" id="ano" class="text form-control">
+                            <label for="Ano">Ano:</label>
+                            <input type="text"  nome="Ano" id="Ano" class="text form-control">
                     </div>
-
                 </div>
+
+            </div>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Detraxit consequat et quo num tendi nada. In elementis mé pra quem é amistosis quis leo. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            
+            <p>Copo furadis é disculpa de bebadis, arcu quam euismod magna. A ordem dos tratores não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
+            
+            <p>Cevadis im ampola pa arma uma pindureta. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Paisis, filhis, espiritis santis. Quem num gosta di mim que vai caçá sua turmis!</p>
+            
+            <p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Viva Forevis aptent taciti sociosqu ad litora torquent. Aenean aliquam molestie leo, vitae iaculis nisl. Suco de cevadiss deixa as pessoas mais interessantis.</p>
+            
+            <p>Si num tem leite então bota uma pinga aí cumpadi! Interagi no mé, cursus quis, vehicula ac nisi. Casamentiss faiz malandris se pirulitá. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.</p>
+            
+            <p>Quem manda na minha terra sou euzis! Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Diuretics paradis num copo é motivis de denguis. Quem num gosta di mé, boa gentis num é.</p>
+            
+            <p>Atirei o pau no gatis, per gatis num morreus. Manduma pindureta quium dia nois paga. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+
+            
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Cor</th>
+                                <th>Modelo</th>
+                                <th>Ano</th>
+                            </tr>    
+                        </thead>    
+                        <tbody>
+                            <tr>
+                                <td>koi</td>
+                                <td>kjsi</td>
+                                <td>afgys</td>
+                                <td>i</td>
+                            </tr>    
+                            <tr>
+                                    <td>ljkhgi</td>
+                                    <td></td>
+                                    <td>as</td>
+                                    <td>ieul;kk</td>
+                                </tr>    
+                                <tr>
+                                        <td>kjhh</td>
+                                        <td>kjsi</td>
+                                        <td></td>
+                                        <td>ieu</td>
+                                    </tr>    
+                        </tbody>            
+                    </table>    
+                </div>    
+            </div>    
+            
+
                 <div class="form-group">
                     <div class="col-sm-12">
                         <br>
-                        <button class="btn btn-primary" onclick="confirm">Cadastrar</button>
+                        <button class="btn btn-primary" onclick="confirm()">Cadastrar <span class="glyphicon glyphicon-check"></span></button>
                    </div>
                 </div>
 
@@ -48,6 +104,28 @@
     </div>
 
 
-    <script src="bootstrap-3-4-0"></script>
+    <script src="bootstrap-3.4.0-dist/js/jquery-1.12.4.min.js"></script>
+    <script src="bootstrap-3.4.0-dist/js/bootstrap.js"></script>
+    <script src="jquery-confirm-v3.3.3/js/jquery-confirm.js"></script>
+
+
+    <script>
+        function confirm(){
+            var Marca  = $("#marca").val();
+            var Modelo = $("#modelo").val();
+            var Cor    = $("#Cor").val();
+            var Ano    = $("#Ano").val();
+
+            var tudo   = (Marca + "<br>" + Modelo + "<br>" + Cor + "<br>" + Ano);
+
+        
+            //alert("cadastro:\n" + tudo);
+        $.alert({
+            title: 'Cadastrado!',
+            content: tudo,
+            type: 'red'
+        });
+    }
+    </script>
 </body>
 </html>
